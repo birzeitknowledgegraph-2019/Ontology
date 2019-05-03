@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#"
+     xml:base="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl">
+        <owl:versionIRI rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#region"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasDirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasRegion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasWriter -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasWriter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#attributes -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#attributes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#averageRating -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#averageRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#birthYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#deathYear -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#deathYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#endYear -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#endYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#genres -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#genres">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasCharacters -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasCharacters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasCode -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#language"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasId -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#hasUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#isAdult -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#isAdult">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#isOriginalTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#isOriginalTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#numVotes -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#numVotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#originalTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#originalTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#primaryName -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#primaryName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#primaryProfession -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#primaryProfession">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#primaryTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#primaryTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#runTimeMinutes -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#runTimeMinutes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#startYear -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#startYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#title -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#titleId -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#titleId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#titleType -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#titleType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#types -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#types">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title -->
+
+    <owl:Class rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#Title"/>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#director -->
+
+    <owl:Class rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#director">
+        <rdfs:subClassOf rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#language -->
+
+    <owl:Class rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#language"/>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals -->
+
+    <owl:Class rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#region -->
+
+    <owl:Class rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#region"/>
+    
+
+
+    <!-- https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#writer -->
+
+    <owl:Class rdf:about="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#writer">
+        <rdfs:subClassOf rdf:resource="https://github.com/birzeitknowledgegraph-2019/Ontology/blob/master/IMDB_DataSets.owl#principals"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
