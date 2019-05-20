@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes"
+xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+xmlns:dbpedia="http://dbpedia.org/ontology" 
+>
+
+<owl:ontology rdf:about="professionalprofiles">
+	<rdfs:comment>Professional Profiles of Companies and Employees Ontology by Data Engineering Project at BZU</rdfs:comment>
+</owl:ontology>
+
+<owl:DatatypeProperty rdf:about="type">
+	<rdfs:domain rdf:resource="foaf:Person"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="linkedinurl">
+	<rdfs:domain rdf:resource="foaf:Person"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="title">
+	<rdfs:domain rdf:resource="foaf:Person"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="position">
+	<rdfs:domain rdf:resource="foaf:Person"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="companyname">
+	<rdfs:domain rdf:resource="foaf:Person"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="employer">
+	<rdfs:domain rdf:resource="foaf:Person"/>
+	<rdfs:range rdf:resource="foaf:Organization"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="companyid">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="type">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="companyname">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="linkedinurl">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="website">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="industry">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="specialities">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="size">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="yearfounded">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="employeesNumber">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="followersNumber">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="description">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="city">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="dbpedia:City"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="country">
+	<rdfs:domain rdf:resource="foaf:Organization"/>
+	<rdfs:range rdf:resource="dbpedia:Country"/>
+</owl:DatatypeProperty>
+
+</rdf:RDF>
