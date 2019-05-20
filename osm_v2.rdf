@@ -1,0 +1,2024 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:osm="https://www.openstreetmap.org/">
+<owl:Ontology rdf:about="osm">
+	<rdfs:comment>Open Street Map Ontology</rdfs:comment>
+</owl:Ontology>
+<owl:Class rdf:about="node">
+</owl:Class>
+<owl:DatatypeProperty rdf:about="id"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="latitude"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:decimal"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="longitude"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:decimal"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="uid"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:integer"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tourism"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="wikidata"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="country_code"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="housenumber"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="facebook"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="phone"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="wikipedia"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="street"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="postcode"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="website"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="city"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="Twitter"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="amenity"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="housename"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="bar"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="botanical"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="fax"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cash"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="population"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="credit_cards"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="continent"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="vegetarian"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cardboard"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="municipality_name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="inscription_date"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="warm_meals"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="levels"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="country"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="operator"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="diameter"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="position"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="debit_cards"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="handwashing"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="wheelchair"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="description"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="acquisition_date"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="speciality"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="oil"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="event_code"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="floor"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="quantity"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="war"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="google_plus"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="distance_meter"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="opening_hours"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="email"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="internet_access"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="smoking"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cuisine"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="shop"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="delivery"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="outdoor_seating"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="religion"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="takeaway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="building"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="denomination"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="target"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="diplomatic"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="dispensing"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="healthcare"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="parking"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="supervised"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="surface"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="fee"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="lit"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="capacity"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="designation"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="drive_through"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="atm"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_in"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="emergency"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="note"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="office"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="start_date"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="level"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="highway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="int_name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="social_facility"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="historic"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="mapillary"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="alt_name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="leisure"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="photo_url"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="landuse"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="community_centre"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="wifi"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="brand"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="source"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="place_of_worship"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="maxspeed"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="natural"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="studio"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="old_name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="comment"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="sport"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="information"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="opened"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="postmaster"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="disused"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="recyclingclothes"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="recyclingglass"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="recyclingbatteries"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="bus"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="public_transport"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="boundary"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="beverage"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="brewery"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="indoor"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="covered"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="mobile"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="abandoned"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="mastercard"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="ref"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="place,"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="capital"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="postal_code"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="admin_level"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="created_by"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="accuracy"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="image"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="waterway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="url"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="access"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="artwork_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="official_name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="geonames_id"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="ssid"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="toilets"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="kosher"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="stars"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="automated"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="self_service"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="service"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="clothes"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="craft"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="military"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="organic"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="instagram"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="rooms"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="buildingpart"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="civilization"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="youtube"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="amenity_old"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_country"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_district"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_flats"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_full"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_interpolation"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_place"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_province"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_subdistrict"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_suburb"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="addr_unit"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="aerialway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="aerodrome_relation_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="aeroway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="area"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="artist"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="artwork"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="attraction"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="backcountry"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="backrest"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="barrier"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="bench"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="bicycle"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="boat"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="branch"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="bridge"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="building_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cairn"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="capacity_disabled"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="capital_city"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cargo"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cash_in"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cemetery"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="charge"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="check_date"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="chicha"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="city_served"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="climbing"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="climbing_boulder"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="closest_town"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="club"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="communication_mobile_phone"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="community"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="company"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="condition"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="construction"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="contact_email"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="contact_fax"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="contact_mobile"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="contact_phone"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="contact_website"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="content"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cost"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="crane_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="crossing"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="crossing_light"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="cultural"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="currency_EGP"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="dataset"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="denotation"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="depth"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="design"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="diaper"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="diplomatic_receiving_country"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="diplomatic_sending_country"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="direction"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="display_digital"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="District"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="disused_shop"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="door"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="drive_in"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="education"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="elevator"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="embankment"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="embassy"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="enforcement"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="entrance"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="established"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="exit"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="factory"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="female"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="ferry"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="fitness_station"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="foot"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="ford"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="frequency"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="fuel_diesel"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="gambling"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="generator_method"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="generator_source"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="geological"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="guest_house"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="harbour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hiking"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="history"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="horse"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hotel"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hotline"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hyperbaric_chamber_diameter"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hyperbaric_chamber_length"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hyperbaric_chamber_maxpressure"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hyperbaric_chamber_places"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="hyperbaric_chamber_scuba_diving"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="industrial"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="inscription"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="int_ref"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="intermittent"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="internet_access_fee"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_capital"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_in_city"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_in_continent"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_in_country"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_in_country_code"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="is_in_state"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="junction"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="kerb"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="landmark"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="lanes"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="layer"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="leaf_cycle"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="league"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="loc_name"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="local_ref"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="location"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="location_transition"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="man_made"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="material"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="maxheight"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="maxstay"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="memorial"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="mooring"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="motor_vehicle"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="motorcar"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="motorcycle"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="mountain"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="mountain_pass"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="network"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="node"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="noexit"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="notice"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="occupation"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="oneway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_bitcoin"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_cards"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_cash"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_coins"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_credit_cards"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_electronic_purses"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_notes"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_telephone_cards"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="payment_visa"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="platforms"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="playground"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="position_accuracy"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="power"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="product"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="prominence"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="pump"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="raceway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="railway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="rank"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="recycling_cans"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="recycling_clothes"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="recycling_paper"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="reef"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="relation_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="residents"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="Resort"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="resource"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="roof_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="roof_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="room"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="route"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="ruins"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_air_fill"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_air_filling"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_attraction_biology"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_attraction_cave"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_attraction_drop_off"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_attraction_night"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_attraction_reef"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_attraction_rocks"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_courses"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_dangers_ship"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_depth"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_descent_line"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_divespot"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_education"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_emergency"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_entry"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_entry_boat"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_Equipment"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_filling"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_maxdepth"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_nitrox"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_nitrox_filling"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_oxygen_filling"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_relation_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_relation_type_cave"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_relation_type_drift"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_relation_type_lake"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_relation_type_sea"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_relation_type_wreck"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_rental"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_repair"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_spoken_languages"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_surface_brash"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_surface_sand"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="scuba_diving_trimix_filling"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="sculptor"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_cardinal_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_cardinal_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_cardinal_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_cardinal_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_cardinal_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_lateral_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_lateral_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_lateral_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_lateral_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_lateral_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_lateral_system"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_safe_water_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_safe_water_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_safe_water_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_special_purpose_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_beacon_special_purpose_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_cardinal_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_cardinal_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_cardinal_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_cardinal_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_isolated_danger_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_isolated_danger_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_isolated_danger_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_lateral_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_lateral_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_lateral_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_lateral_system"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_safe_water_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_safe_water_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_safe_water_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_special_purpose_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_special_purpose_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_buoy_special_purpose_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_fog_signal_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_fog_signal_group"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_fog_signal_period"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_fog_signal_range"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_harbour_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_information"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_landmark_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_landmark_function"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_character"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_group"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_multiple"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_period"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_range"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_sector_end"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_sector_start"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_1_sequence"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_character"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_group"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_period"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_range"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_sector_end"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_2_sector_start"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_character"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_group"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_period"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_range"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_sector_end"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_3_sector_start"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_character"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_float_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_float_colour_pattern"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_group"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_height"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_multiple"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_period"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_range"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_reference"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_light_sequence"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_mooring_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_platform_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_radar_reflector"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_radar_transponder_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_radar_transponder_group"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_radio_station_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_rock_water_level"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_signal_station_traffic_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_small_craft_facility_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_topmark_colour"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_topmark_shape"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seamark_wreck_category"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="seasonal"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="service_times"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="shelter"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="shisha"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="shower"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="signal"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="source_population"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="species"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="sqkm"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="station"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="stay"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="sub_sea"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="subject"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="submerged"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="substation"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="subway"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="symbol"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tactile_paving"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="taxi"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="todo"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="toilets_disposal"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="toilets_wheelchair"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="toll"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tomb"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tower"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tower_construction"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tower_type"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tracktype"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="traffic_calming"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="traffic_sign"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="traffic_signals"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="train"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tram"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="travel"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tree"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="trees"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="trolleybus"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="tunnel"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="u-turn"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="unisex"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="vending"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="verified"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="voltage"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="wall"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="water"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="wheelchair_description"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="women"> 
+	<rdfs:domain rdf:resource="#node"/>
+	<rdfs:range rdf:resource="xsd:string"/>
+</owl:DatatypeProperty>
+</rdf:RDF>
